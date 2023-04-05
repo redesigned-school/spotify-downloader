@@ -1,5 +1,6 @@
 {
 	"name": "Spotify Downloader",
+    "short_name": "Spotify Downloader",
 	"icons": [
         {
             "src": "./images/icons/256.png",
