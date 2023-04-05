@@ -42,6 +42,17 @@
             밀리 의장은 이런 추계는 최근 6개월도 안 되는 사이에 러시아군이 10만여명의 인명피해를 봤다는 것을 의미합니다.
             특히 지난 2월 이후 최대 4만명의 러시아군이 죽거나 다친 것으로 알려졌는데요.
             영상으로 보시죠.</p>
-    </div>  
+    </div>
+    <script>
+        if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('sw.js') // serviceWorker 파일 경로
+                .then((reg) => {
+                    console.log('Service worker registered.', reg);
+                })
+                .catch(e => console.log(e));
+            });
+        }
+    </script>  
 </body>
 </html>
