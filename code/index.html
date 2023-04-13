@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://supsok.github.io/gbsw/touchstrap/css/touchstrap.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="bar bar-nav bar-light bg-faded">
+        <h1 class="title">Title</h1>
+      </header>
+
+      <!-- Segmented control in standard bar fixed to top -->
+<nav class="bar bar-standard bar-light bg-faded">
+    <div class="nav nav-control">
+      <a class="nav-link active" role="button">One</a>
+      <a class="nav-link" role="button">Two</a>
+      <a class="nav-link" role="button">Three</a>
+    </div>
+  </nav>
+  
+  <!-- Block button in standard bar fixed below top bar -->
+  <div class="bar bar-standard bar-header-secondary bar-light bg-faded">
+    <button class="btn btn-secondary btn-block">Block level button</button>
+  </div>
+  
+  <!-- Block button in standard bar fixed above the footer -->
+  <div class="bar bar-standard bar-footer-secondary bar-light bg-faded">
+    <button class="btn btn-secondary btn-block">Block level button</button>
+  </div>
+  
+  <!-- Icons in standard bar fixed to the bottom of the screen -->
+  <div class="bar bar-standard bar-footer bar-light bg-faded">
+    <a class="icon icon-compose pull-left" role="button"></a>
+    <a class="icon icon-gear pull-right" role="button"></a>
+  </div>
+
+      <nav class="bar bar-tab bar-light bg-faded">
+        <a class="tab-item active" role="button">
+          <span class="icon icon-home"></span>
+          <span class="tab-label">Home</span>
+        </a>
+        <a class="tab-item" role="button">
+          <span class="icon icon-person"></span>
+          <span class="tab-label">Profile</span>
+        </a>
+        <a class="tab-item" role="button">
+          <span class="icon icon-star-filled"></span>
+          <span class="tab-label">Favorites</span>
+        </a>
+        <a class="tab-item" role="button">
+          <span class="icon icon-search"></span>
+          <span class="tab-label">Search</span>
+        </a>
+        <a class="tab-item" role="button">
+          <span class="icon icon-gear"></span>
+          <span class="tab-label">Settings</span>
+        </a>
+      </nav>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js')
+            .then(function(registration) {
+                console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            })
+            .catch(function(err) {
+                console.log('ServiceWorker registration failed: ', err);
+            });
+        }
+    </script>
+</body>
+</html>
